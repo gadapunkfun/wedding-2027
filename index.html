@@ -15,206 +15,151 @@
   <meta property="og:url" content="https://robertandgema2027.se/">
   <meta property="og:locale" content="en_GB">
   <meta property="og:locale:alternate" content="es_ES">
-  <meta name="theme-color" content="#121c5c">
+  <meta name="theme-color" content="#f4eee8">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="/assets/fonts/sansita-swashed-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/site.css">
   <script src="/assets/site.js" defer></script>
 </head>
 <body>
 <!--
-THESIS: The site is the party itself, a courtyard dinner at dusk under string lights, never the ivory-script template.
-OWN-WORLD: Twilight sky #121c5c-#3550c8, string-light butter #ffd45a, table flowers (marigold #f39a1c, poppy, raspberry #c4245a, cornflower #2f4fd0, fern #24573a), linen menu cards w/ scalloped borders; Sansita Swashed display, Caveat handwriting, Libre Franklin body; flat gouache SVG flowers; licitar heart for Robert's Croatian side.
-STORY: Guests arrive at dusk, see two place cards (Sweden, Madrid), read each programme as a menu, learn the dress code, may contribute, then reply.
-FIRST VIEWPORT: Lights strung across the top, ROBERT & GEMA huge in linen, handwritten "are getting married. Twice." in butter, two scalloped place cards, butter RSVP pill, flower bunches at the table edge.
-FORM: User-pinned moodboard world (supersedes seed e0acc9d4 poster direction).
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+THESIS: Classy & sexy: an oxblood-on-paper wedding stationery suite, set like an editorial; the type does the seducing.
+OWN-WORLD: Warm paper #f4eee8, oxblood #74151f, cream on wine blocks; Cormorant Garamond uppercase & italic, IBM Plex Mono for dates, places & times; hairline rules; a dotted licitar-heart ornament for Robert's Croatian side.
+STORY: The names fill the page edge to edge, a single vow flanked by Hrvatska & España, then the two programmes side by side, dress code, gifts, and a wine-red RSVP.
+FIRST VIEWPORT: ROBERT & GEMA across the full width (italic ampersand), hairline nav, mono "Sweden & Madrid / 2027", uppercase vow, italic underlined RSVP.
+FORM: User-pinned reference (Cordially "Aditya & Priya" look, 2026-11-19), supersedes the garden-party moodboard world.
 -->
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="bar">
-  <a class="bar__mark" href="#top" aria-label="Robert &amp; Gema, top of page">R<span>&amp;</span>G</a>
-  <nav class="bar__nav" aria-label="Sections">
-    <ul>
-      <li><a href="#programme">Programme</a></li>
-      <li><a href="#dress-code">Dress code</a></li>
-      <li><a href="#gifts">Gifts</a></li>
-      <li><a href="#rsvp">RSVP</a></li>
-    </ul>
-  </nav>
-  <a class="bar__lang" href="/es/" hreflang="es" lang="es" data-lang-switch>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>
-    Español
-  </a>
+<header class="top" id="top">
+  <h1 class="mark"><span class="mark__line">Robert</span> <span class="mark__line"><em>&amp;</em> Gema</span></h1>
 </header>
 
+<nav class="bar" aria-label="Sections">
+  <a class="bar__home" href="#top">Robert <em>&amp;</em> Gema</a>
+  <ul class="bar__nav">
+    <li><a href="#programme">Programme</a></li>
+    <li><a href="#dress-code">Dress code</a></li>
+    <li><a href="#gifts">Gifts</a></li>
+  </ul>
+  <a class="bar__lang" href="/es/" hreflang="es" lang="es" data-lang-switch>Español</a>
+  <a class="bar__rsvp" href="#rsvp">RSVP</a>
+</nav>
+
 <main id="main">
-  <section class="hero" id="top" aria-labelledby="hero-title">
-    <img class="hero__lights" src="/assets/art/lights.svg" alt="">
-    <h1 class="hero__names" id="hero-title"><span>Robert</span> <span><span class="amp">&amp;</span> Gema</span></h1>
-    <p class="hero__tag script">are getting married. Twice.<br>2027</p>
-
-    <div class="placecards">
-      <a class="placecard" href="#sweden">
-        <span class="doily edge--cobalt">
-          <span class="doily__inner">
-            <span class="placecard__city">Sweden</span>
-            <span class="placecard__native script" lang="sv">Sverige</span>
-            <!-- EDIT: Sweden date -->
-            <span class="placecard__date">Date to be announced</span>
-          </span>
-        </span>
-      </a>
-      <a class="placecard" href="#madrid">
-        <span class="doily edge--raspberry">
-          <span class="doily__inner">
-            <span class="placecard__city">Madrid</span>
-            <span class="placecard__native script" lang="es">España</span>
-            <!-- EDIT: Madrid date -->
-            <span class="placecard__date">Date to be announced</span>
-          </span>
-        </span>
-      </a>
+  <section class="intro" aria-label="Introduction">
+    <!-- EDIT: dates once known, e.g. "Sweden 12.06 · Madrid 18.09" -->
+    <p class="meta"><span>Sweden &amp; Madrid</span>
+      <svg class="orn" viewBox="0 0 24 22" aria-hidden="true"><path d="M12 20.5C5 15.5 1.5 11.5 1.5 7.2 1.5 4 4 1.5 7.1 1.5c2.2 0 4 1.2 4.9 3.1.9-1.9 2.7-3.1 4.9-3.1 3.1 0 5.6 2.5 5.6 5.7 0 4.3-3.5 8.3-10.5 13.3Z" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M12 16.6C7.4 13.3 5 10.6 5 7.9 5 6 6.4 4.8 8 4.8c1.7 0 3 1.1 4 3 1-1.9 2.3-3 4-3 1.6 0 3 1.2 3 3.1 0 2.7-2.4 5.4-7 8.7Z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="0 2.2"/></svg>
+      <span>2027</span></p>
+    <div class="vow">
+      <span class="vow__side" lang="hr">Hrvatska</span>
+      <p class="vow__text">We are getting married. Twice. Once in Sweden, once in Madrid, and we would love you there.</p>
+      <span class="vow__side" lang="es">España</span>
     </div>
-
-    <a class="button" href="#rsvp">
-      RSVP <small>Tell us if you can come</small>
-      <svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h36M29 3l10 9-10 9"/></svg>
-    </a>
-
-    <img class="bunch bunch--left" src="/assets/art/bunch-a.svg" alt="">
-    <img class="bunch bunch--right" src="/assets/art/bunch-b.svg" alt="">
+    <a class="link" href="#rsvp">RSVP</a>
   </section>
 
-  <section class="section ground--marigold scallop-top" id="programme" aria-labelledby="programme-title">
-    <div class="section__inner">
-      <h2 class="section__title" id="programme-title">Programme</h2>
-      <p class="lede">Two celebrations, one in Sweden and one in Madrid. Come to one or both.</p>
+  <!-- EDIT (optional): add photos to /assets/photos/ and uncomment
+  <div class="photos">
+    <img src="/assets/photos/1.jpg" alt="Robert and Gema in ..." loading="lazy">
+    <img src="/assets/photos/2.jpg" alt="..." loading="lazy">
+    <img src="/assets/photos/3.jpg" alt="..." loading="lazy">
+  </div>
+  -->
 
-      <div class="menus">
-        <article class="menu edge--cobalt" id="sweden" aria-labelledby="sweden-title">
-          <img class="menu__bloom" src="/assets/art/daisy.svg" alt="">
-          <div class="doily">
-            <div class="doily__inner">
-              <h3 class="menu__title" id="sweden-title">Sweden <span class="menu__native script" lang="sv">Sverige</span></h3>
-              <dl class="facts">
-                <!-- EDIT: Sweden date & venue -->
-                <div><dt>Date</dt><dd>To be announced</dd></div>
-                <div><dt>Place</dt><dd>To be announced</dd></div>
-              </dl>
-              <!-- EDIT: Sweden programme times -->
-              <ol class="courses" aria-label="Programme in Sweden">
-                <li><img src="/assets/art/rings.svg" alt=""><span class="courses__name">Ceremony</span><span class="courses__time">Time to be announced</span></li>
-                <li><img src="/assets/art/candle.svg" alt=""><span class="courses__name">Dinner</span><span class="courses__time">Time to be announced</span></li>
-                <li><img src="/assets/art/coupe.svg" alt=""><span class="courses__name">Party</span><span class="courses__time">Time to be announced</span></li>
-              </ol>
-            </div>
-          </div>
-        </article>
+  <section class="section" id="programme" aria-labelledby="programme-title">
+    <h2 class="title" id="programme-title">The programme</h2>
+    <p class="lede">Two celebrations, one in Sweden and one in Madrid. Come to one or both.</p>
+    <div class="cities">
+      <article class="city" id="sweden" aria-labelledby="sweden-title">
+        <h3 class="city__name" id="sweden-title">Sweden <span lang="sv">Sverige</span></h3>
+        <dl class="facts">
+          <!-- EDIT: Sweden date & venue -->
+          <div><dt>Date</dt><dd>To be announced</dd></div>
+          <div><dt>Place</dt><dd>To be announced</dd></div>
+        </dl>
+        <!-- EDIT: Sweden programme times, e.g. <span class="run__time">15:00</span> -->
+        <ol class="run" aria-label="Programme in Sweden">
+          <li><span class="run__time">Time TBA</span><span class="run__what">Ceremony</span></li>
+          <li><span class="run__time">Time TBA</span><span class="run__what">Dinner</span></li>
+          <li><span class="run__time">Time TBA</span><span class="run__what">Party</span></li>
+        </ol>
+      </article>
+      <article class="city" id="madrid" aria-labelledby="madrid-title">
+        <h3 class="city__name" id="madrid-title">Madrid <span lang="es">España</span></h3>
+        <dl class="facts">
+          <!-- EDIT: Madrid date & venue -->
+          <div><dt>Date</dt><dd>To be announced</dd></div>
+          <div><dt>Place</dt><dd>To be announced</dd></div>
+        </dl>
+        <!-- EDIT: Madrid programme times -->
+        <ol class="run" aria-label="Programme in Madrid">
+          <li><span class="run__time">Time TBA</span><span class="run__what">Ceremony</span></li>
+          <li><span class="run__time">Time TBA</span><span class="run__what">Dinner</span></li>
+          <li><span class="run__time">Time TBA</span><span class="run__what">Party</span></li>
+        </ol>
+      </article>
+    </div>
+  </section>
 
-        <article class="menu edge--raspberry" id="madrid" aria-labelledby="madrid-title">
-          <img class="menu__bloom" src="/assets/art/dahlia.svg" alt="">
-          <div class="doily">
-            <div class="doily__inner">
-              <h3 class="menu__title" id="madrid-title">Madrid <span class="menu__native script" lang="es">España</span></h3>
-              <dl class="facts">
-                <!-- EDIT: Madrid date & venue -->
-                <div><dt>Date</dt><dd>To be announced</dd></div>
-                <div><dt>Place</dt><dd>To be announced</dd></div>
-              </dl>
-              <!-- EDIT: Madrid programme times -->
-              <ol class="courses" aria-label="Programme in Madrid">
-                <li><img src="/assets/art/rings.svg" alt=""><span class="courses__name">Ceremony</span><span class="courses__time">Time to be announced</span></li>
-                <li><img src="/assets/art/candle.svg" alt=""><span class="courses__name">Dinner</span><span class="courses__time">Time to be announced</span></li>
-                <li><img src="/assets/art/coupe.svg" alt=""><span class="courses__name">Party</span><span class="courses__time">Time to be announced</span></li>
-              </ol>
-            </div>
-          </div>
-        </article>
+  <section class="section section--tint" id="dress-code" aria-labelledby="dress-title">
+    <h2 class="title" id="dress-title">Dress code</h2>
+    <div class="pair">
+      <div>
+        <h3 class="label">Sweden</h3>
+        <!-- EDIT: Sweden dress code -->
+        <p>To be announced.</p>
+      </div>
+      <div>
+        <h3 class="label">Madrid</h3>
+        <!-- EDIT: Madrid dress code -->
+        <p>To be announced.</p>
       </div>
     </div>
   </section>
 
-  <section class="section ground--blush scallop-top" id="dress-code" aria-labelledby="dress-title">
-    <div class="section__inner">
-      <h2 class="section__title section__title--raspberry" id="dress-title">Dress code</h2>
-      <div class="split">
-        <div>
-          <h3><img src="/assets/art/cornflower.svg" alt="">Sweden</h3>
-          <!-- EDIT: Sweden dress code -->
-          <p>To be announced.</p>
-        </div>
-        <div>
-          <h3><img src="/assets/art/poppy.svg" alt="">Madrid</h3>
-          <!-- EDIT: Madrid dress code -->
-          <p>To be announced.</p>
-        </div>
-      </div>
-    </div>
+  <section class="section" id="gifts" aria-labelledby="gifts-title">
+    <h2 class="title" id="gifts-title">Gifts</h2>
+    <p class="lede">Having you there is the best gift. If you'd still like to help us with the wedding, any contribution is warmly welcome.</p>
+    <!-- EDIT: fill each value & copy it into data-copy to show the Copy button -->
+    <ul class="gifts">
+      <li>
+        <span class="gifts__name">Swish <small>Sweden</small></span>
+        <span class="gifts__value tba">Number to be announced</span>
+        <button class="copy" type="button" data-copy="" data-done="Copied" data-failed="Copy failed" aria-label="Copy Swish number" hidden><span>Copy</span></button>
+      </li>
+      <li>
+        <span class="gifts__name">Bizum <small>Spain</small></span>
+        <span class="gifts__value tba">Number to be announced</span>
+        <button class="copy" type="button" data-copy="" data-done="Copied" data-failed="Copy failed" aria-label="Copy Bizum number" hidden><span>Copy</span></button>
+      </li>
+      <li>
+        <span class="gifts__name">Bank transfer <small>IBAN</small></span>
+        <span class="gifts__value tba">IBAN to be announced</span>
+        <button class="copy" type="button" data-copy="" data-done="Copied" data-failed="Copy failed" aria-label="Copy IBAN" hidden><span>Copy</span></button>
+      </li>
+    </ul>
   </section>
 
-  <section class="section ground--fern scallop-top" id="gifts" aria-labelledby="gifts-title">
-    <div class="section__inner">
-      <h2 class="section__title" id="gifts-title">Gifts</h2>
-      <p class="lede">Having you there is the best gift. If you'd still like to help us with the wedding, any contribution is warmly welcome.</p>
-      <!-- EDIT: fill each value & copy it into data-copy to show the Copy button -->
-      <ul class="gifts">
-        <li>
-          <span class="gifts__name">Swish <small>Sweden</small></span>
-          <span class="gifts__value tba">Number to be announced</span>
-          <button class="copy" type="button" data-copy="" data-done="Copied" data-failed="Copy failed" aria-label="Copy Swish number" hidden>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
-            <span>Copy</span>
-          </button>
-        </li>
-        <li>
-          <span class="gifts__name">Bizum <small>Spain</small></span>
-          <span class="gifts__value tba">Number to be announced</span>
-          <button class="copy" type="button" data-copy="" data-done="Copied" data-failed="Copy failed" aria-label="Copy Bizum number" hidden>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
-            <span>Copy</span>
-          </button>
-        </li>
-        <li>
-          <span class="gifts__name">Bank transfer <small>IBAN</small></span>
-          <span class="gifts__value tba">IBAN to be announced</span>
-          <button class="copy" type="button" data-copy="" data-done="Copied" data-failed="Copy failed" aria-label="Copy IBAN" hidden>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
-            <span>Copy</span>
-          </button>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section ground--raspberry scallop-top rsvp" id="rsvp" aria-labelledby="rsvp-title">
-    <img class="rsvp__bloom" src="/assets/art/licitar.svg" alt="">
-    <div class="section__inner">
-      <h2 class="section__title" id="rsvp-title">Will you join us?</h2>
-      <!-- EDIT: reply-by date -->
-      <p class="lede">Tell us which celebration you can make, Sweden, Madrid or both, plus any food allergies or dietary needs. Please reply by: <strong>date to be announced</strong>.</p>
-      <!-- EDIT: Google Form URL -->
-      <a class="button" href="https://forms.gle/REPLACE-ME" target="_blank" rel="noopener">
-        Reply now
-        <svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h36M29 3l10 9-10 9"/></svg>
-      </a>
-      <p class="rsvp__note">Opens a Google Form in a new tab.</p>
-    </div>
+  <section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
+    <h2 class="rsvp__title" id="rsvp-title">Will you join us?</h2>
+    <p class="lede">Tell us which celebration you can make, Sweden, Madrid or both, plus any food allergies or dietary needs.</p>
+    <!-- EDIT: reply-by date -->
+    <p class="meta">Please reply by: date to be announced</p>
+    <!-- EDIT: Google Form URL -->
+    <a class="link link--big" href="https://forms.gle/REPLACE-ME" target="_blank" rel="noopener">Reply now</a>
+    <p class="rsvp__note">Opens a Google Form in a new tab.</p>
   </section>
 </main>
 
-<footer class="foot scallop-top">
-  <img class="foot__lights" src="/assets/art/lights.svg" alt="">
-  <div class="foot__inner">
-    <div>
-      <p class="foot__names">Robert <span class="amp">&amp;</span> Gema</p>
-      <p class="foot__places script"><span lang="hr">Hrvatska</span> · <span lang="es">España</span> · <span lang="sv">Sverige</span></p>
-    </div>
-    <div class="foot__links">
-      <a href="/es/" hreflang="es" lang="es" data-lang-switch>Leer en español</a>
-      <a href="#top">Back to top</a>
-    </div>
-  </div>
+<footer class="foot">
+  <p class="foot__names">Robert <em>&amp;</em> Gema</p>
+  <p class="foot__places"><span lang="hr">Hrvatska</span> · <span lang="es">España</span> · <span lang="sv">Sverige</span></p>
+  <p class="foot__links">
+    <a href="/es/" hreflang="es" lang="es" data-lang-switch>Leer en español</a>
+    <a href="#top">Back to top</a>
+  </p>
 </footer>
 </body>
 </html>

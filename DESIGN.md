@@ -1,52 +1,39 @@
-# Design: Garden Party at Dusk
+# Design: Oxblood Stationery
 
-The site is the party itself: a courtyard dinner at dusk under string lights, long tables of saturated flowers, hand-painted menu cards. World pinned by the couple's moodboard (2026-11-19). Robert is Croatian, Gema is Spanish, they live in Sweden: one wedding in Sweden, one in Madrid. Never ivory, script-and-sage or wedding-template looks.
+Classy & sexy: the site reads like a letterpress wedding suite set as an editorial. Oxblood ink on warm paper, very large serif capitals, tiny mono details, hairline rules, no illustration. Pinned by the couple's reference (Cordially "Aditya & Priya", 2026-11-19). Robert is Croatian, Gema is Spanish, they live in Sweden: one wedding in Sweden, one in Madrid.
 
 ## Colour
 
-Each section is a solid "tablecloth" ground; the sky only lives at the top & bottom.
-
 | Token | Hex | Role |
 |---|---|---|
-| `--night` → `--twilight` → `--dusk` | #121c5c, #1d2f8f, #3550c8 | Twilight sky gradient (hero, footer); bar |
-| `--butter` | #ffd45a | String-light glow; primary buttons (RSVP), `&`, handwritten lines on dark |
-| `--marigold` | #f39a1c | Programme ground |
-| `--blush` | #f8cdd5 | Dress-code ground |
-| `--fern` | #24573a | Gifts ground |
-| `--raspberry` | #c4245a | RSVP ground; Madrid card edge |
-| `--cobalt` | #2f4fd0 | Sweden card edge |
-| `--burnt` | #b8520a | Orange lettering on linen (menu course names, native names) |
-| `--linen` | #fffdf8 | Menu & place cards; text on dark/saturated grounds |
-| `--ink` / `--ink-soft` | #22163a, #4a3f5e | Text on light grounds |
+| `--paper` | #f4eee8 | Page ground |
+| `--paper-2` | #ebe2d8 | Tinted band (dress code) |
+| `--wine` | #74151f | All text & rules on paper; RSVP & footer ground |
+| `--wine-soft` | #8a3d44 | Secondary text (times, TBA values) |
+| `--cream` | #f6eee4 | Text on wine |
+| `--rule` | wine @ 22% | Hairlines |
 
-Sweden = cobalt, Madrid = raspberry, everywhere.
+Monochrome on purpose: Sweden & Madrid are told apart by name, never by colour.
 
 ## Type
 
-- Display: Sansita Swashed 800 (self-hosted variable): names, section titles, course names, buttons.
-- Handwriting: Caveat 700: taglines, native place names (Sverige, España), small labels on dark grounds.
-- Body: Libre Franklin 500–700. Figures tabular.
+- Cormorant Garamond (variable, roman & italic, self-hosted): the wordmark (uppercase, ~12vw, edge to edge), section titles (uppercase), body. Italic for the `&`, city names and links.
+- IBM Plex Mono 400, 0.72rem, uppercase, tracked: dates, places, times, labels, nav. Never for prose.
 
-## Shapes
+## Shapes & ornament
 
-- `.scallop-top`: every section after the hero has an awning/menu scalloped top edge (CSS mask, radius `--scallop` 12–20px) overlapping the previous section.
-- `.doily`: cards with an outward scalloped coloured border (CSS mask, `--s` 9px) around a linen panel. Shadows via `filter: drop-shadow` on the unmasked wrapper.
-- Cards sit slightly tilted (-2.5° to +2°) like cards on a table; straighten on hover.
-- Dashed dividers inside cards & lists; pills (999px radius) for buttons & language switch.
-
-## Illustration (`assets/art/`)
-
-Flat gouache-style SVG, authored for this site (no third-party art):
-marigold, poppy, daisy, cornflower, dahlia, sprig, umbel; bunches `bunch-a/b` (hero table edge); course icons rings / candle / coupe; `lights.svg` (string lights); `licitar.svg` (Croatian licitar gingerbread heart, Robert's side; also the favicon).
-Corner blooms: daisy on Sweden (midsommar), dahlia on Madrid; cornflower/poppy mark Sweden/Madrid in dress code.
+- Hairline rules (1px wine @ 22%) frame the programme columns, run-of-day lists and gift rows. No cards, no shadows, no rounded boxes.
+- Links: italic serif w/ thin underline (RSVP, Reply now); the offset opens on hover.
+- One ornament: a small outlined licitar heart w/ dotted piping (Robert's Croatian side), inline SVG in the intro; the favicon is the filled version.
+- Optional warm black & white photo band (`.photos`), off until the couple add photos.
 
 ## Motion
 
-One moment: the string lights switch on bulb by bulb at load (CSS inside `lights.svg`, off under reduced motion). Otherwise only small hover lifts.
+One moment: the two lines of the wordmark rise out of a clip at load. Off under reduced motion.
 
 ## Rules
 
-- Literal headings (Programme, Dress code, Gifts). Copy EN + ES only; place names in their own language (Hrvatska · España · Sverige in the footer).
+- Literal headings. Copy EN + ES only; place names in their own language (Hrvatska · España · Sverige).
 - Deep links identical in both languages: `#programme #sweden #madrid #dress-code #gifts #rsvp`; language switch keeps the hash.
-- Focus: 3px butter outline (ink/raspberry on light grounds). Selection: butter/ink.
-- Moodboard photos are other people's posts: reference only, never published.
+- Focus: 2px currentColor outline. Selection: wine/cream (inverted on wine).
+- Reference & moodboard images belong to others: never published.

@@ -4,8 +4,7 @@ Wedding site for Robert & Gema. Plain static HTML/CSS, no build step.
 
 - `/` English: `index.html`
 - `/es/` Spanish: `es/index.html`
-- `assets/` CSS, JS, self-hosted fonts (Sansita Swashed, Caveat & Libre Franklin, SIL Open Font License, via Fontsource)
-- `assets/art/` hand-made SVG illustrations (flowers, string lights, licitar heart); see `DESIGN.md`
+- `assets/` CSS, JS, self-hosted fonts (Cormorant Garamond & IBM Plex Mono, SIL Open Font License, via Fontsource); see `DESIGN.md`
 
 Run locally: `python3 -m http.server` then open http://localhost:8000 (paths are root-absolute, so opening the file directly won't load CSS).
 
@@ -13,13 +12,14 @@ Run locally: `python3 -m http.server` then open http://localhost:8000 (paths are
 
 Every spot is marked `<!-- EDIT: ... -->` in **both** `index.html` and `es/index.html` (`grep -n "EDIT" index.html es/index.html`):
 
-1. Dates (hero slugs + each wedding's Date)
+1. Dates (intro line + each wedding's Date)
 2. Venues (Place)
-3. Programme times & items (replace `<span class="lineup__time tba">Time TBA</span>` w/ `<span class="lineup__time">15:00</span>`; add/remove `<li>` rows)
+3. Programme times (replace `Time TBA` in `<span class="run__time">` w/ e.g. `15:00`; add/remove `<li>` rows)
 4. Dress code per wedding
 5. Gifts: Swish number, Bizum number, IBAN. Remove the `tba` class & put the same value in `data-copy="..."` to show the Copy button. Delete any row you don't want.
 6. RSVP reply-by date
 7. Google Form URL (`https://forms.gle/REPLACE-ME`, appears once per page). Tip: one form w/ questions in both languages, or two forms.
+8. Optional photos: put them in `assets/photos/` & uncomment the `.photos` block in `index.html` (shown in warm black & white)
 
 ## Deploy on GitHub Pages
 

@@ -40,7 +40,7 @@ Two celebrations, two countries, one couple: Robert (Croatian) & Gema (fully Spa
 - Names: Robert & Gema. Gema is Spanish; never anglicise or misspell (not "Gemma").
 - Domain: robertandgema2027.se.
 - Languages: English & Spanish only (no Swedish, no Croatian copy).
-- Visual world pinned by the couple's moodboard (2026-11-19): hand-painted garden party at dusk, string lights, saturated table flowers, scalloped menu cards. Not their photos; never publish moodboard images.
+- Visual world pinned by the couple (2026-11-19): classy & sexy, oxblood on warm paper, editorial serif stationery (reference: Cordially "Aditya & Priya" template). Never publish reference images.
 
 ## Evidence on Hand
 
