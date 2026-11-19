@@ -1,6 +1,6 @@
 # Design: Oxblood Stationery
 
-Classy & sexy: the site reads like a letterpress wedding suite set as an editorial. Oxblood ink on warm paper, very large serif capitals, tiny mono details, hairline rules, no illustration. Pinned by the couple's reference (Cordially "Aditya & Priya", 2026-11-19). Robert is Croatian, Gema is Spanish, they live in Sweden: one wedding in Sweden, one in Madrid.
+Classy & sexy: the site reads like a letterpress wedding suite set as an editorial. Oxblood ink on warm paper, very large serif capitals, tiny mono details, hairline rules, no illustration. Pinned by the couple's reference (Cordially "Aditya & Priya", 2026-11-19). Robert is Croatian, Gema is Spanish, they live in Sweden: married once: the wedding (ceremony & party) in Sweden, a second party in Madrid.
 
 ## Colour
 

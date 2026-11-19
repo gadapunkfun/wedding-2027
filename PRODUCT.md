@@ -16,11 +16,11 @@ Wedding guests of Robert & Gema: family & friends from Croatia, Spain, Sweden an
 
 ## Product Purpose
 
-One bilingual home for the couple's two 2027 weddings: one in Sweden, one in Madrid. Success = every guest knows which celebration(s) they're invited to, when & where, what to wear, and has replied via the RSVP form.
+One multilingual home for the couple's 2027 wedding: married once (ceremony in Sweden), two parties (Sweden & Madrid). Success = every guest knows which celebration(s) they're invited to, when & where, what to wear, and has replied via the RSVP form.
 
 ## Positioning
 
-Two celebrations, two countries, one couple: Robert (Croatian) & Gema (fully Spanish; Spanish name: GEMA), who live together in Sweden. One wedding where they live (Sweden), one in Gema's home country (Madrid). Croatian family attends too, so Croatian cultural touches are welcome (Croatian copy at /hr/ since 2026-11-19). Neither copy is a translation afterthought.
+Two celebrations, two countries, one couple: Robert (Croatian) & Gema (fully Spanish; Spanish name: GEMA), who live together in Sweden. The wedding (ceremony + party) where they live (Sweden), a second party in Gema's home country (Madrid). Married once, never "twice". Croatian family attends too, so Croatian cultural touches are welcome (Croatian copy at /hr/ since 2026-11-19). Neither copy is a translation afterthought.
 
 ## Operating Context
 
@@ -49,7 +49,7 @@ No photos, dates, venues or copy supplied yet. Must not fabricate venues, times,
 ## Product Principles
 
 1. Both languages are first-class: equal care, idiomatic copy, one tap to switch.
-2. The two weddings are distinct and clear: guests instantly see which is which.
+2. The wedding (Sweden) & the party (Madrid) are distinct and clear: guests instantly see which is which.
 3. Practical answers first on mobile: when, where, wear, reply.
 4. Contributions are offered warmly & optionally, never pushy.
 
