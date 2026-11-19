@@ -12,7 +12,7 @@ Static HTML/CSS (plus minimal vanilla JS only where needed), no build step. Host
 
 ## Users
 
-Wedding guests of Robert & Gema: family & friends from Sweden, Spain and elsewhere, many opening the link on a phone from an invitation message. Mixed ages, including older relatives; some read only Spanish, some only English. Their job: learn where/when each celebration is, what to wear, reply (RSVP), and optionally contribute.
+Wedding guests of Robert & Gema: family & friends from Croatia, Spain, Sweden and elsewhere, many opening the link on a phone from an invitation message. Mixed ages, including older relatives; some read only Spanish, some only English. Their job: learn where/when each celebration is, what to wear, reply (RSVP), and optionally contribute.
 
 ## Product Purpose
 
@@ -20,7 +20,7 @@ One bilingual home for the couple's two 2027 weddings: one in Sweden, one in Mad
 
 ## Positioning
 
-Two celebrations, two countries, one couple: Robert (Sweden) & Gema (Spain, Spanish name: GEMA). The site bridges both families and both languages; neither copy is a translation afterthought.
+Two celebrations, two countries, one couple: Robert (Croatian) & Gema (fully Spanish; Spanish name: GEMA), who live together in Sweden. One wedding where they live (Sweden), one in Gema's home country (Madrid). Croatian family attends too, so Croatian cultural touches are welcome (site copy stays EN + ES only). Neither copy is a translation afterthought.
 
 ## Operating Context
 
@@ -39,6 +39,8 @@ Two celebrations, two countries, one couple: Robert (Sweden) & Gema (Spain, Span
 
 - Names: Robert & Gema. Gema is Spanish; never anglicise or misspell (not "Gemma").
 - Domain: robertandgema2027.se.
+- Languages: English & Spanish only (no Swedish, no Croatian copy).
+- Visual world pinned by the couple's moodboard (2026-11-19): hand-painted garden party at dusk, string lights, saturated table flowers, scalloped menu cards. Not their photos; never publish moodboard images.
 
 ## Evidence on Hand
 

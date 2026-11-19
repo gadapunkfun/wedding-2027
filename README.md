@@ -4,7 +4,8 @@ Wedding site for Robert & Gema. Plain static HTML/CSS, no build step.
 
 - `/` English: `index.html`
 - `/es/` Spanish: `es/index.html`
-- `assets/` CSS, JS, self-hosted fonts (Big Shoulders Display & Libre Franklin, SIL Open Font License, via Fontsource)
+- `assets/` CSS, JS, self-hosted fonts (Sansita Swashed, Caveat & Libre Franklin, SIL Open Font License, via Fontsource)
+- `assets/art/` hand-made SVG illustrations (flowers, string lights, licitar heart); see `DESIGN.md`
 
 Run locally: `python3 -m http.server` then open http://localhost:8000 (paths are root-absolute, so opening the file directly won't load CSS).
 

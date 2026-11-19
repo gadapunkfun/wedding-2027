@@ -15,19 +15,19 @@
   <meta property="og:url" content="https://robertandgema2027.se/es/">
   <meta property="og:locale" content="es_ES">
   <meta property="og:locale:alternate" content="en_GB">
-  <meta name="theme-color" content="#141414">
+  <meta name="theme-color" content="#121c5c">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="/assets/fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/sansita-swashed-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/site.css">
   <script src="/assets/site.js" defer></script>
 </head>
 <body>
 <!--
-THESIS: Each wedding is announced like the town's big party: two pasted fiesta bills (Madrid verbena, Swedish midsommar), never the ivory-script template.
-OWN-WORLD: Woodtype poster stocks: Madrid red #c8201e, Swedish blue #0b4fa0, shared flag-yellow #f5c400 reserved for RSVP fills only, ink #141414, paper #f4f2ec; Big Shoulders Display condensed caps, Libre Franklin body; thick-thin cartel rules, printed grain.
-STORY: Guests see two celebrations at a glance, read each programme like a line-up, learn the dress code, may contribute, then reply.
-FIRST VIEWPORT: Blue Sweden bill | red Madrid bill; ROBERT & GEMA monumental across the seam, each name starting on its own country's stock; a yellow RSVP snipe pasted across both.
-FORM: Two Fiesta Posters, candidate 3 of 7; seed key e0acc9d4.
+THESIS: The site is the party itself, a courtyard dinner at dusk under string lights, never the ivory-script template.
+OWN-WORLD: Twilight sky #121c5c-#3550c8, string-light butter #ffd45a, table flowers (marigold #f39a1c, poppy, raspberry #c4245a, cornflower #2f4fd0, fern #24573a), linen menu cards w/ scalloped borders; Sansita Swashed display, Caveat handwriting, Libre Franklin body; flat gouache SVG flowers; licitar heart for Robert's Croatian side.
+STORY: Guests arrive at dusk, see two place cards (Sweden, Madrid), read each programme as a menu, learn the dress code, may contribute, then reply.
+FIRST VIEWPORT: Lights strung across the top, ROBERT & GEMA huge in linen, handwritten "are getting married. Twice." in butter, two scalloped place cards, butter RSVP pill, flower bunches at the table edge.
+FORM: User-pinned moodboard world (supersedes seed e0acc9d4 poster direction).
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
 <a class="skip" href="#main">Saltar al contenido</a>
@@ -36,8 +36,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <a class="bar__mark" href="#top" aria-label="Robert y Gema, inicio de la página">R<span>&amp;</span>G</a>
   <nav class="bar__nav" aria-label="Secciones">
     <ul>
-      <li><a href="#sweden">Suecia</a></li>
-      <li><a href="#madrid">Madrid</a></li>
+      <li><a href="#programme">Programa</a></li>
       <li><a href="#dress-code">Vestimenta</a></li>
       <li><a href="#gifts">Regalos</a></li>
       <li><a href="#rsvp">Confirmar</a></li>
@@ -51,87 +50,102 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <main id="main">
   <section class="hero" id="top" aria-labelledby="hero-title">
-    <div class="hero__half hero__half--sweden stock stock--blue" aria-hidden="true"></div>
-    <div class="hero__half hero__half--madrid stock stock--red" aria-hidden="true"></div>
+    <img class="hero__lights" src="/assets/art/lights.svg" alt="">
+    <h1 class="hero__names" id="hero-title"><span>Robert</span> <span><span class="amp">&amp;</span> Gema</span></h1>
+    <p class="hero__tag script">se casan. Dos veces.<br>2027</p>
 
-    <a class="slug slug--sweden stock--blue" href="#sweden">
-      <span class="slug__city">Suecia</span>
-      <span class="slug__native" lang="sv">Sverige</span>
-      <!-- EDIT: fecha Suecia -->
-      <span class="slug__date">Fecha por anunciar
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2v11M3.5 8.5 8 13l4.5-4.5"/></svg>
-      </span>
-    </a>
-    <a class="slug slug--madrid stock--red" href="#madrid">
-      <span class="slug__city">Madrid</span>
-      <span class="slug__native">España</span>
-      <!-- EDIT: fecha Madrid -->
-      <span class="slug__date">Fecha por anunciar
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2v11M3.5 8.5 8 13l4.5-4.5"/></svg>
-      </span>
+    <div class="placecards">
+      <a class="placecard" href="#sweden">
+        <span class="doily edge--cobalt">
+          <span class="doily__inner">
+            <span class="placecard__city">Suecia</span>
+            <span class="placecard__native script" lang="sv">Sverige</span>
+            <!-- EDIT: fecha Suecia -->
+            <span class="placecard__date">Fecha por anunciar</span>
+          </span>
+        </span>
+      </a>
+      <a class="placecard" href="#madrid">
+        <span class="doily edge--raspberry">
+          <span class="doily__inner">
+            <span class="placecard__city">Madrid</span>
+            <span class="placecard__native script">España</span>
+            <!-- EDIT: fecha Madrid -->
+            <span class="placecard__date">Fecha por anunciar</span>
+          </span>
+        </span>
+      </a>
+    </div>
+
+    <a class="button" href="#rsvp">
+      Confirma <small>Dinos si puedes venir</small>
+      <svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h36M29 3l10 9-10 9"/></svg>
     </a>
 
-    <h1 id="hero-title" class="visually-hidden">Robert y Gema</h1>
-    <p class="hero__line hero__line--robert" aria-hidden="true">Robert</p>
-    <p class="hero__line hero__line--gema" aria-hidden="true"><span class="amp">&amp;</span> Gema</p>
-    <p class="hero__tag">se casan. Dos veces. <strong>2027</strong></p>
-
-    <a class="snipe" href="#rsvp">
-      <span class="snipe__word">Confirma</span>
-      <span class="snipe__text">Dinos si puedes venir</span>
-      <svg class="snipe__arrow" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="3.5" aria-hidden="true"><path d="M2 12h38M29 2l11 10-11 10"/></svg>
-    </a>
+    <img class="bunch bunch--left" src="/assets/art/bunch-a.svg" alt="">
+    <img class="bunch bunch--right" src="/assets/art/bunch-b.svg" alt="">
   </section>
 
-  <section class="bill stock stock--blue" id="sweden" aria-labelledby="sweden-title">
-    <div class="bill__inner event">
-      <div class="event__head">
-        <h2 class="bill__title" id="sweden-title">Suecia <span class="bill__native" lang="sv">Sverige</span></h2>
-        <dl class="facts">
-          <!-- EDIT: fecha y lugar Suecia -->
-          <div><dt>Fecha</dt><dd>Por anunciar</dd></div>
-          <div><dt>Lugar</dt><dd>Por anunciar</dd></div>
-        </dl>
+  <section class="section ground--marigold scallop-top" id="programme" aria-labelledby="programme-title">
+    <div class="section__inner">
+      <h2 class="section__title" id="programme-title">Programa</h2>
+      <p class="lede">Dos celebraciones, una en Suecia y otra en Madrid. Venid a una o a las dos.</p>
+
+      <div class="menus">
+        <article class="menu edge--cobalt" id="sweden" aria-labelledby="sweden-title">
+          <img class="menu__bloom" src="/assets/art/daisy.svg" alt="">
+          <div class="doily">
+            <div class="doily__inner">
+              <h3 class="menu__title" id="sweden-title">Suecia <span class="menu__native script" lang="sv">Sverige</span></h3>
+              <dl class="facts">
+                <!-- EDIT: fecha y lugar Suecia -->
+                <div><dt>Fecha</dt><dd>Por anunciar</dd></div>
+                <div><dt>Lugar</dt><dd>Por anunciar</dd></div>
+              </dl>
+              <!-- EDIT: horario Suecia -->
+              <ol class="courses" aria-label="Programa en Suecia">
+                <li><img src="/assets/art/rings.svg" alt=""><span class="courses__name">Ceremonia</span><span class="courses__time">Hora por confirmar</span></li>
+                <li><img src="/assets/art/candle.svg" alt=""><span class="courses__name">Cena</span><span class="courses__time">Hora por confirmar</span></li>
+                <li><img src="/assets/art/coupe.svg" alt=""><span class="courses__name">Fiesta</span><span class="courses__time">Hora por confirmar</span></li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu edge--raspberry" id="madrid" aria-labelledby="madrid-title">
+          <img class="menu__bloom" src="/assets/art/dahlia.svg" alt="">
+          <div class="doily">
+            <div class="doily__inner">
+              <h3 class="menu__title" id="madrid-title">Madrid <span class="menu__native script">España</span></h3>
+              <dl class="facts">
+                <!-- EDIT: fecha y lugar Madrid -->
+                <div><dt>Fecha</dt><dd>Por anunciar</dd></div>
+                <div><dt>Lugar</dt><dd>Por anunciar</dd></div>
+              </dl>
+              <!-- EDIT: horario Madrid -->
+              <ol class="courses" aria-label="Programa en Madrid">
+                <li><img src="/assets/art/rings.svg" alt=""><span class="courses__name">Ceremonia</span><span class="courses__time">Hora por confirmar</span></li>
+                <li><img src="/assets/art/candle.svg" alt=""><span class="courses__name">Cena</span><span class="courses__time">Hora por confirmar</span></li>
+                <li><img src="/assets/art/coupe.svg" alt=""><span class="courses__name">Fiesta</span><span class="courses__time">Hora por confirmar</span></li>
+              </ol>
+            </div>
+          </div>
+        </article>
       </div>
-      <!-- EDIT: programa Suecia. Cambia "Hora por confirmar" por p.ej. <span class="lineup__time">15:00</span> -->
-      <ol class="lineup" aria-label="Programa en Suecia">
-        <li><span class="lineup__time tba">Hora por confirmar</span><span class="lineup__act">Ceremonia</span></li>
-        <li><span class="lineup__time tba">Hora por confirmar</span><span class="lineup__act">Cena</span></li>
-        <li><span class="lineup__time tba">Hora por confirmar</span><span class="lineup__act">Fiesta</span></li>
-      </ol>
     </div>
   </section>
 
-  <section class="bill stock stock--red" id="madrid" aria-labelledby="madrid-title">
-    <div class="bill__inner event event--mirror">
-      <div class="event__head">
-        <h2 class="bill__title" id="madrid-title">Madrid <span class="bill__native">España</span></h2>
-        <dl class="facts">
-          <!-- EDIT: fecha y lugar Madrid -->
-          <div><dt>Fecha</dt><dd>Por anunciar</dd></div>
-          <div><dt>Lugar</dt><dd>Por anunciar</dd></div>
-        </dl>
-      </div>
-      <!-- EDIT: programa Madrid -->
-      <ol class="lineup" aria-label="Programa en Madrid">
-        <li><span class="lineup__time tba">Hora por confirmar</span><span class="lineup__act">Ceremonia</span></li>
-        <li><span class="lineup__time tba">Hora por confirmar</span><span class="lineup__act">Cena</span></li>
-        <li><span class="lineup__time tba">Hora por confirmar</span><span class="lineup__act">Fiesta</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="bill stock stock--paper" id="dress-code" aria-labelledby="dress-title">
-    <div class="bill__inner">
-      <h2 class="bill__title" id="dress-title">Código de vestimenta</h2>
+  <section class="section ground--blush scallop-top" id="dress-code" aria-labelledby="dress-title">
+    <div class="section__inner">
+      <h2 class="section__title section__title--raspberry" id="dress-title">Código de vestimenta</h2>
       <div class="split">
         <div>
-          <h3><span class="dot dot--sweden" aria-hidden="true"></span>Suecia</h3>
+          <h3><img src="/assets/art/cornflower.svg" alt="">Suecia</h3>
           <!-- EDIT: vestimenta Suecia -->
           <p>Por anunciar.</p>
         </div>
         <div>
-          <h3><span class="dot dot--madrid" aria-hidden="true"></span>Madrid</h3>
+          <h3><img src="/assets/art/poppy.svg" alt="">Madrid</h3>
           <!-- EDIT: vestimenta Madrid -->
           <p>Por anunciar.</p>
         </div>
@@ -139,9 +153,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </div>
   </section>
 
-  <section class="bill stock stock--ink" id="gifts" aria-labelledby="gifts-title">
-    <div class="bill__inner">
-      <h2 class="bill__title" id="gifts-title">Regalos</h2>
+  <section class="section ground--fern scallop-top" id="gifts" aria-labelledby="gifts-title">
+    <div class="section__inner">
+      <h2 class="section__title" id="gifts-title">Regalos</h2>
       <p class="lede">Vuestra presencia es nuestro mejor regalo. Si aun así queréis ayudarnos con la boda, cualquier aportación será muy bienvenida.</p>
       <!-- EDIT: rellena cada dato y cópialo en data-copy para mostrar el botón Copiar -->
       <ul class="gifts">
@@ -173,26 +187,29 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </div>
   </section>
 
-  <section class="bill stock stock--yellow rsvp" id="rsvp" aria-labelledby="rsvp-title">
-    <div class="bill__inner">
-      <h2 class="bill__title" id="rsvp-title">¿Nos acompañáis?</h2>
+  <section class="section ground--raspberry scallop-top rsvp" id="rsvp" aria-labelledby="rsvp-title">
+    <img class="rsvp__bloom" src="/assets/art/licitar.svg" alt="">
+    <div class="section__inner">
+      <h2 class="section__title" id="rsvp-title">¿Nos acompañáis?</h2>
       <!-- EDIT: fecha límite -->
       <p class="lede">Decidnos a qué celebración podéis venir, Suecia, Madrid o las dos, y si tenéis alguna alergia o necesidad alimentaria. Confirmad antes del: <strong>fecha por anunciar</strong>.</p>
-      <div class="rsvp__actions">
-        <!-- EDIT: URL del formulario de Google -->
-        <a class="button" href="https://forms.gle/REPLACE-ME" target="_blank" rel="noopener">
-          Confirmar asistencia
-          <svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="4" aria-hidden="true"><path d="M2 12h38M29 2l11 10-11 10"/></svg>
-        </a>
-        <p class="rsvp__note">Se abre un formulario de Google en otra pestaña.</p>
-      </div>
+      <!-- EDIT: URL del formulario de Google -->
+      <a class="button" href="https://forms.gle/REPLACE-ME" target="_blank" rel="noopener">
+        Confirmar asistencia
+        <svg viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h36M29 3l10 9-10 9"/></svg>
+      </a>
+      <p class="rsvp__note">Se abre un formulario de Google en otra pestaña.</p>
     </div>
   </section>
 </main>
 
-<footer class="foot stock stock--ink">
+<footer class="foot scallop-top">
+  <img class="foot__lights" src="/assets/art/lights.svg" alt="">
   <div class="foot__inner">
-    <p class="foot__names" aria-hidden="true">Robert <span class="amp">&amp;</span> Gema</p>
+    <div>
+      <p class="foot__names">Robert <span class="amp">&amp;</span> Gema</p>
+      <p class="foot__places script"><span lang="hr">Hrvatska</span> · España · <span lang="sv">Sverige</span></p>
+    </div>
     <div class="foot__links">
       <a href="/" hreflang="en" lang="en" data-lang-switch>Read in English</a>
       <a href="#top">Volver arriba</a>

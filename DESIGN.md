@@ -1,38 +1,52 @@
-# Design: Two Fiesta Posters
+# Design: Garden Party at Dusk
 
-Each wedding is announced like the town's big party: Madrid verbena carteles & Swedish midsommar dance-bills, woodtype letterpress on coloured poster stock. Never ivory, script or botanicals.
+The site is the party itself: a courtyard dinner at dusk under string lights, long tables of saturated flowers, hand-painted menu cards. World pinned by the couple's moodboard (2026-11-19). Robert is Croatian, Gema is Spanish, they live in Sweden: one wedding in Sweden, one in Madrid. Never ivory, script-and-sage or wedding-template looks.
 
-## Stocks (colour)
+## Colour
 
-Every section is one full-bleed printed bill on a single stock, w/ a light SVG grain (`--grain`, alpha .13).
+Each section is a solid "tablecloth" ground; the sky only lives at the top & bottom.
 
 | Token | Hex | Role |
 |---|---|---|
-| `--blue` | #0b4fa0 | Sweden stock. Always Sweden, always first/left |
-| `--red` | #c8201e | Madrid stock. Always Madrid, always second/right |
-| `--yellow` | #f5c400 | Shared flag-yellow. **Fill reserved for RSVP only** (snipe, RSVP section). Elsewhere only as ink (`&`, `2027`, nav RSVP link, focus ring) |
-| `--ink` | #141414 | Bar, gifts, footer stock; ink on paper & yellow |
-| `--paper` | #f4f2ec | Text on dark stocks; dress-code stock |
-| `--*-tint` | per stock | Secondary text, tinted from the stock hue, never grey |
+| `--night` → `--twilight` → `--dusk` | #121c5c, #1d2f8f, #3550c8 | Twilight sky gradient (hero, footer); bar |
+| `--butter` | #ffd45a | String-light glow; primary buttons (RSVP), `&`, handwritten lines on dark |
+| `--marigold` | #f39a1c | Programme ground |
+| `--blush` | #f8cdd5 | Dress-code ground |
+| `--fern` | #24573a | Gifts ground |
+| `--raspberry` | #c4245a | RSVP ground; Madrid card edge |
+| `--cobalt` | #2f4fd0 | Sweden card edge |
+| `--burnt` | #b8520a | Orange lettering on linen (menu course names, native names) |
+| `--linen` | #fffdf8 | Menu & place cards; text on dark/saturated grounds |
+| `--ink` / `--ink-soft` | #22163a, #4a3f5e | Text on light grounds |
+
+Sweden = cobalt, Madrid = raspberry, everywhere.
 
 ## Type
 
-- Display: Big Shoulders Display (self-hosted variable woff2), 800–900, uppercase, line-height ~0.85. Monumental: hero names up to 15rem, bill titles up to 12rem.
-- Body: Libre Franklin (self-hosted variable), 500–700. Small labels: 0.78–0.85rem, 700, tracking .14–.2em, uppercase, tinted.
-- Figures: tabular everywhere.
+- Display: Sansita Swashed 800 (self-hosted variable): names, section titles, course names, buttons.
+- Handwriting: Caveat 700: taglines, native place names (Sverige, España), small labels on dark grounds.
+- Body: Libre Franklin 500–700. Figures tabular.
 
-## Components
+## Shapes
 
-- **Hero**: two halves (Sweden blue | Madrid red; stacked on mobile, seam between ROBERT and & GEMA). Names cross the seam, each starting on their own country's stock. Slugs = city, native name (Sverige / España), date.
-- **Snipe**: yellow strip pasted at -2deg across the hero, the RSVP call. Soft lifted-paper shadow. The page's single motion moment: pastes in w/ clip-path, 1.1s ease-out-expo; off under reduced motion.
-- **Line-up**: programme as a cartel line-up: thick-thin rules (4px + 1px), time column | act in display caps.
-- **Facts**: `dl` of Date / Place, tinted labels.
-- **Gifts list**: method (display caps + tiny country label) | value | Copy pill (shown only by JS when a value exists).
-- **Buttons/pills**: language switch & copy = 2px outlined pill; primary RSVP = ink block w/ display caps & arrow.
+- `.scallop-top`: every section after the hero has an awning/menu scalloped top edge (CSS mask, radius `--scallop` 12–20px) overlapping the previous section.
+- `.doily`: cards with an outward scalloped coloured border (CSS mask, `--s` 9px) around a linen panel. Shadows via `filter: drop-shadow` on the unmasked wrapper.
+- Cards sit slightly tilted (-2.5° to +2°) like cards on a table; straighten on hover.
+- Dashed dividers inside cards & lists; pills (999px radius) for buttons & language switch.
+
+## Illustration (`assets/art/`)
+
+Flat gouache-style SVG, authored for this site (no third-party art):
+marigold, poppy, daisy, cornflower, dahlia, sprig, umbel; bunches `bunch-a/b` (hero table edge); course icons rings / candle / coupe; `lights.svg` (string lights); `licitar.svg` (Croatian licitar gingerbread heart, Robert's side; also the favicon).
+Corner blooms: daisy on Sweden (midsommar), dahlia on Madrid; cornflower/poppy mark Sweden/Madrid in dress code.
+
+## Motion
+
+One moment: the string lights switch on bulb by bulb at load (CSS inside `lights.svg`, off under reduced motion). Otherwise only small hover lifts.
 
 ## Rules
 
-- Literal labels: headings are the plain name of the thing (Dress code, Gifts).
-- Deep links identical in both languages: `#sweden #madrid #dress-code #gifts #rsvp`; language switch keeps the hash.
-- Icons: authored inline SVG, 2px stroke, `currentColor`.
-- Focus: 3px yellow outline (ink on yellow, blue on paper). Selection: yellow/ink.
+- Literal headings (Programme, Dress code, Gifts). Copy EN + ES only; place names in their own language (Hrvatska · España · Sverige in the footer).
+- Deep links identical in both languages: `#programme #sweden #madrid #dress-code #gifts #rsvp`; language switch keeps the hash.
+- Focus: 3px butter outline (ink/raspberry on light grounds). Selection: butter/ink.
+- Moodboard photos are other people's posts: reference only, never published.

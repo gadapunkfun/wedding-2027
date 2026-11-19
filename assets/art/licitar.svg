@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 94">
+  <!-- licitarsko srce: Croatian painted gingerbread heart (Robert's side) -->
+  <path d="M50 90C20 68 3 50 3 30C3 13 15 3 30 3C40 3 47 9 50 17C53 9 60 3 70 3C85 3 97 13 97 30C97 50 80 68 50 90Z" fill="#c8102e"/>
+  <path d="M50 81C25 63 11 48 11 31C11 18 20 11 31 11C40 11 46 17 50 25C54 17 60 11 69 11C80 11 89 18 89 31C89 48 75 63 50 81Z" fill="none" stroke="#fffdf8" stroke-width="3.6" stroke-linecap="round" stroke-dasharray="0 6.4"/>
+  <path d="M50 72C30 58 19 46 19 33C19 23 26 18 33 18C41 18 46 23 50 31C54 23 59 18 67 18C74 18 81 23 81 33C81 46 70 58 50 72Z" fill="none" stroke="#ffd45a" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="7 4"/>
+  <g transform="translate(50 42)">
+    <g fill="#fffdf8">
+      <ellipse cx="-16" cy="-4" rx="3.2" ry="6" transform="rotate(-60 -16 -4)"/>
+      <ellipse cx="-16" cy="6" rx="3.2" ry="6" transform="rotate(-120 -16 6)"/>
+      <ellipse cx="16" cy="-4" rx="3.2" ry="6" transform="rotate(60 16 -4)"/>
+      <ellipse cx="16" cy="6" rx="3.2" ry="6" transform="rotate(120 16 6)"/>
+    </g>
+    <circle r="10.5" fill="#ffd45a"/>
+    <circle r="8" fill="#b9d3e8"/>
+    <path d="M-4.5-3.5A5.5 5.5 0 0 1 2-5.5" fill="none" stroke="#fffdf8" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="-16" cy="1" r="2.2" fill="#ffd45a"/>
+    <circle cx="16" cy="1" r="2.2" fill="#ffd45a"/>
+  </g>
+</svg>
