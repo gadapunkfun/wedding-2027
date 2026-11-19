@@ -135,6 +135,8 @@ a:focus-visible, button:focus-visible {
   letter-spacing: 0.02em;
 }
 .bar__home em { text-transform: none; }
+.bar__lang { display: flex; gap: 0.9rem; }
+.bar__lang [aria-current] { text-decoration: underline; text-underline-offset: 0.35em; }
 .bar__nav { display: flex; gap: clamp(1rem, 2.5vw, 2rem); margin: 0 auto; }
 .bar__rsvp {
   font-family: var(--serif);
@@ -334,7 +336,7 @@ a:focus-visible, button:focus-visible {
   border-top: 1px solid rgb(246 238 228 / 0.25);
 }
 .foot__names { font-size: 1.2rem; }
-.foot__links { display: flex; justify-content: flex-end; gap: 1.5rem; }
+.foot__links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.5rem 1.5rem; }
 .foot a { text-decoration: none; }
 .foot a:hover { text-decoration: underline; }
 

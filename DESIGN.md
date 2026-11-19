@@ -33,7 +33,7 @@ One moment: the two lines of the wordmark rise out of a clip at load. Off under 
 
 ## Rules
 
-- Literal headings. Copy EN + ES only; place names in their own language (Hrvatska · España · Sverige).
+- Literal headings. Copy EN, ES & HR (/, /es/, /hr/); place names in their own language (Hrvatska · España · Sverige).
 - Deep links identical in both languages: `#programme #sweden #madrid #dress-code #gifts #rsvp`; language switch keeps the hash.
 - Focus: 2px currentColor outline. Selection: wine/cream (inverted on wine).
 - Reference & moodboard images belong to others: never published.

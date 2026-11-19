@@ -8,11 +8,11 @@ web
 
 ## Stack
 
-Static HTML/CSS (plus minimal vanilla JS only where needed), no build step. Hosted on GitHub Pages with custom domain `robertandgema2027.se` (CNAME). English at `/`, Spanish at `/es/`.
+Static HTML/CSS (plus minimal vanilla JS only where needed), no build step. Hosted on GitHub Pages with custom domain `robertandgema2027.se` (CNAME). English at `/`, Spanish at `/es/`, Croatian at `/hr/`.
 
 ## Users
 
-Wedding guests of Robert & Gema: family & friends from Croatia, Spain, Sweden and elsewhere, many opening the link on a phone from an invitation message. Mixed ages, including older relatives; some read only Spanish, some only English. Their job: learn where/when each celebration is, what to wear, reply (RSVP), and optionally contribute.
+Wedding guests of Robert & Gema: family & friends from Croatia, Spain, Sweden and elsewhere, many opening the link on a phone from an invitation message. Mixed ages, including older relatives; some read only Spanish, Croatian or English. Their job: learn where/when each celebration is, what to wear, reply (RSVP), and optionally contribute.
 
 ## Product Purpose
 
@@ -20,7 +20,7 @@ One bilingual home for the couple's two 2027 weddings: one in Sweden, one in Mad
 
 ## Positioning
 
-Two celebrations, two countries, one couple: Robert (Croatian) & Gema (fully Spanish; Spanish name: GEMA), who live together in Sweden. One wedding where they live (Sweden), one in Gema's home country (Madrid). Croatian family attends too, so Croatian cultural touches are welcome (site copy stays EN + ES only). Neither copy is a translation afterthought.
+Two celebrations, two countries, one couple: Robert (Croatian) & Gema (fully Spanish; Spanish name: GEMA), who live together in Sweden. One wedding where they live (Sweden), one in Gema's home country (Madrid). Croatian family attends too, so Croatian cultural touches are welcome (Croatian copy at /hr/ since 2026-11-19). Neither copy is a translation afterthought.
 
 ## Operating Context
 
@@ -39,7 +39,7 @@ Two celebrations, two countries, one couple: Robert (Croatian) & Gema (fully Spa
 
 - Names: Robert & Gema. Gema is Spanish; never anglicise or misspell (not "Gemma").
 - Domain: robertandgema2027.se.
-- Languages: English & Spanish only (no Swedish, no Croatian copy).
+- Languages: English, Spanish & Croatian (no Swedish copy).
 - Visual world pinned by the couple (2026-11-19): classy & sexy, oxblood on warm paper, editorial serif stationery (reference: Cordially "Aditya & Priya" template). Never publish reference images.
 
 ## Evidence on Hand
